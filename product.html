@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products | SwiftShop</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">SWIFT<span class="text-primary">SHOP</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link active" href="product.html">Products</a></li>
+                <li class="nav-item"><a class="nav-link" href="product_detail.html">Product-detail</a></li>
+                <li class="nav-item"><a class="nav-link" href="signup.html">Signup</a></li>
+                <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+            </ul>
+            <div class="d-flex align-items-center">
+                <a href="#" class="text-dark me-3"><i class="fa-regular fa-heart"></i></a>
+                <a href="#" class="text-dark me-3 position-relative">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">0</span>
+                </a>
+                <button class="btn btn-primary btn-sm ms-2">My Account</button>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<!-- Breadcrumb -->
+<nav aria-label="breadcrumb" class="bg-light py-3">
+    <div class="container">
+        <ol class="breadcrumb mb-0">
+            <li class="breadcrumb-item"><a href="index.html" class="text-decoration-none">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Products</li>
+        </ol>
+    </div>
+</nav>
+
+<!-- Products Section -->
+<div class="container my-5">
+    <div class="row">
+        <!-- Sidebar -->
+        <div class="col-md-3 mb-4">
+            <div class="card shadow-sm border-0">
+                <div class="card-header bg-primary text-white fw-bold">Categories</div>
+                <div class="list-group list-group-flush">
+                    <button class="list-group-item list-group-item-action active">
+                        <i class="fa-solid fa-fire me-2"></i> Best Sellers
+                    </button>
+                    <button class="list-group-item list-group-item-action">
+                        <i class="fa-solid fa-star me-2"></i> New Products
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Products Grid -->
+        <div class="col-md-9">
+            <!-- Best Sellers -->
+            <h4 class="mb-4">Best Sellers</h4>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card shadow-sm h-100 border">
+                        <img src="./images/img-4.avif" class="card-img-top" style="height:200px; object-fit:cover;" alt="Premium Watch">
+                        <div class="card-body">
+                            <h6 class="card-title fw-bold">Premium Watch</h6>
+                            <p class="text-primary mb-2">$199</p>
+                            <div class="d-grid"><button class="btn btn-sm btn-primary">Add to Cart</button></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card shadow-sm h-100 border">
+                        <img src="./images/img-5.avif" class="card-img-top" style="height:200px; object-fit:cover;" alt="Wireless Headphones">
+                        <div class="card-body">
+                            <h6 class="card-title fw-bold">Wireless Headphones</h6>
+                            <p class="text-primary mb-2">$250</p>
+                            <div class="d-grid"><button class="btn btn-sm btn-primary">Add to Cart</button></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card shadow-sm h-100 border">
+                        <img src="./images/img-6.avif" class="card-img-top" style="height:200px; object-fit:cover;" alt="Smart Speaker">
+                        <div class="card-body">
+                            <h6 class="card-title fw-bold">Smart Speaker</h6>
+                            <p class="text-primary mb-2">$120</p>
+                            <div class="d-grid"><button class="btn btn-sm btn-primary">Add to Cart</button></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- New Products -->
+            <h4 class="my-4">New Arrivals</h4>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card shadow-sm h-100 border">
+                        <img src="./images/img-7.avif" class="card-img-top" style="height:200px; object-fit:cover;" alt="Leather Bag">
+                        <div class="card-body">
+                            <h6 class="card-title fw-bold">Leather Bag</h6>
+                            <p class="text-primary mb-2">$85</p>
+                            <div class="d-grid"><button class="btn btn-sm btn-primary">Add to Cart</button></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card shadow-sm h-100 border">
+                        <img src="./images/img-1.avif" class="card-img-top" style="height:200px; object-fit:cover;" alt="Casual Sneakers">
+                        <div class="card-body">
+                            <h6 class="card-title fw-bold">Casual Sneakers</h6>
+                            <p class="text-primary mb-2">$65</p>
+                            <div class="d-grid"><button class="btn btn-sm btn-primary">Add to Cart</button></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card shadow-sm h-100 border">
+                        <img src="./images/img-2.webp" class="card-img-top" style="height:200px; object-fit:cover;" alt="Glass Coffee Mug">
+                        <div class="card-body">
+                            <h6 class="card-title fw-bold">Glass Coffee Mug</h6>
+                            <p class="text-primary mb-2">$15</p>
+                            <div class="d-grid"><button class="btn btn-sm btn-primary">Add to Cart</button></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="bg-dark text-white pt-5 pb-3 mt-auto">
+    <div class="container text-center">
+        <p>&copy; 2026 SwiftShop. All Rights Reserved.</p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
